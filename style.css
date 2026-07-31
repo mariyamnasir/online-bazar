@@ -1,0 +1,639 @@
+/* =========================
+BASIC RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  }
+
+body {
+background-color: #e2e7e6;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar {
+min-height: 60px;
+background-color: #0f1111;
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+gap: 10px;
+padding: 5px 10px;
+}
+
+/* Logo */
+
+.nav-logo {
+height: 60px;
+width: 150px;
+flex-shrink: 0;
+}
+
+.logo {
+background-image: url("abc.jpg.png");
+background-size: cover;
+background-position: center;
+height: 50px;
+width: 150px;
+}
+
+.border {
+border: 2px solid transparent;
+padding: 5px;
+}
+
+.border:hover {
+border: 2px solid white;
+}
+
+/* =========================
+ADDRESS
+========================= */
+
+.nav-address {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+padding: 5px 8px;
+flex-shrink: 0;
+}
+
+.add-first {
+color: #cccccc;
+font-size: 0.75rem;
+line-height: 14px;
+}
+
+.add-second {
+font-size: 1rem;
+font-weight: 700;
+line-height: 15px;
+}
+
+.add-icon {
+display: flex;
+align-items: center;
+gap: 3px;
+}
+
+.add-icon i {
+font-size: 16px;
+}
+
+/* =========================
+SEARCH BAR
+========================= */
+
+.nav-search {
+display: flex;
+align-items: center;
+background-color: white;
+width: 620px;
+max-width: 45%;
+height: 40px;
+border-radius: 4px;
+overflow: hidden;
+}
+
+.search-select {
+background-color: #f3f3f3;
+width: 55px;
+height: 100%;
+text-align: center;
+border: none;
+cursor: pointer;
+}
+
+.search-input {
+width: 100%;
+height: 100%;
+padding: 0 10px;
+font-size: 1rem;
+border: none;
+outline: none;
+}
+
+.search-icon {
+width: 45px;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;
+background-color: #febd68;
+color: #0f1111;
+cursor: pointer;
+}
+
+.nav-search:hover {
+outline: 2px solid orange;
+}
+
+/* =========================
+SIGN IN / RETURNS
+========================= */
+
+.nav-signin,
+.nav-return {
+flex-shrink: 0;
+}
+
+span {
+font-size: 0.7rem;
+}
+
+.nav-second {
+font-size: 0.85rem;
+font-weight: 700;
+}
+
+/* =========================
+CART
+========================= */
+
+.nav-cart {
+font-size: 0.85rem;
+font-weight: 700;
+display: flex;
+align-items: center;
+gap: 5px;
+flex-shrink: 0;
+}
+
+.nav-cart i {
+font-size: 30px;
+}
+
+/* =========================
+PANEL
+========================= */
+
+.panel {
+min-height: 40px;
+background-color: #222f3d;
+display: flex;
+color: white;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+}
+
+.panel-all {
+font-weight: 700;
+white-space: nowrap;
+}
+
+.panel-all i {
+margin-right: 5px;
+}
+
+.panel-ops {
+width: 70%;
+font-size: 0.85rem;
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+
+.panel-ops p {
+cursor: pointer;
+}
+
+.panel-deal {
+font-size: 0.9rem;
+font-weight: 700;
+white-space: nowrap;
+}
+
+/* =========================
+HERO SECTION
+========================= */
+
+.hero-section {
+background-image: url("hero-section.jpg");
+background-size: cover;
+background-position: center;
+height: 350px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+padding: 0 20px;
+}
+
+.hero-msg {
+color: black;
+background-color: white;
+min-height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 0.85rem;
+width: 80%;
+max-width: 1200px;
+margin-bottom: 25px;
+padding: 10px 15px;
+}
+
+.hero-msg a {
+color: #007185;
+margin-left: 5px;
+cursor: pointer;
+}
+
+/* =========================
+SHOP SECTION
+========================= */
+
+.shop-section {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+padding: 15px 3%;
+background-color: #e2e7e6;
+}
+
+.box {
+min-height: 400px;
+background-color: white;
+padding: 20px 0 15px;
+width: 100%;
+}
+
+.box-content {
+margin: 0 1rem;
+}
+
+.box-content h2 {
+font-size: 1.4rem;
+min-height: 45px;
+}
+
+.box-img {
+height: 300px;
+background-size: cover;
+background-position: center;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.box-content p {
+color: #007185;
+cursor: pointer;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+margin-top: 15px;
+width: 100%;
+}
+
+.foot-panel1 {
+background-color: #37477a;
+color: white;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 0.85rem;
+cursor: pointer;
+}
+
+.panel2 {
+background-color: #222f3a;
+color: white;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+min-height: 300px;
+padding: 30px 8%;
+gap: 30px;
+}
+
+.panel2 ul {
+list-style: none;
+}
+
+.panel2 ul p {
+font-weight: 700;
+margin-bottom: 15px;
+}
+
+.panel2 ul a {
+display: block;
+font-size: 0.85rem;
+margin-top: 10px;
+color: #dddddd;
+text-decoration: none;
+}
+
+.panel2 ul a:hover {
+text-decoration: underline;
+}
+
+/* =========================
+BOTTOM FOOTER
+========================= */
+
+.foot-panel4 {
+background-color: #0f1111;
+color: white;
+width: 100%;
+min-height: 80px;
+font-size: 0.7rem;
+text-align: center;
+padding: 20px 10px;
+}
+
+.pages {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.pages a {
+color: white;
+text-decoration: none;
+}
+
+.pages a:hover {
+text-decoration: underline;
+}
+
+.copy-right {
+margin-top: 10px;
+}
+
+/* =========================
+TABLET RESPONSIVE
+768px - 1024px
+========================= */
+
+@media (max-width: 1024px) {
+
+```
+.navbar {
+    flex-wrap: wrap;
+    padding: 8px 15px;
+}
+
+.nav-search {
+    order: 5;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.panel {
+    padding: 0 15px;
+}
+
+.panel-ops {
+    gap: 15px;
+}
+
+.panel-deal {
+    display: none;
+}
+
+.hero-section {
+    height: 300px;
+}
+
+.hero-msg {
+    width: 90%;
+}
+
+.shop-section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 4%;
+}
+
+.box {
+    min-height: 380px;
+}
+
+.box-img {
+    height: 280px;
+}
+
+.panel2 {
+    padding: 30px 5%;
+}
+```
+
+}
+
+/* =========================
+MOBILE RESPONSIVE
+767px AND BELOW
+========================= */
+
+@media (max-width: 767px) {
+
+```
+/* Navbar */
+
+.navbar {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 10px;
+}
+
+.nav-logo {
+    width: 90px;
+}
+
+.logo {
+    width: 90px;
+}
+
+.nav-address {
+    justify-self: end;
+}
+
+.nav-search {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 100%;
+    margin: 5px 0;
+}
+
+.nav-signin,
+.nav-return,
+.nav-cart {
+    width: 100%;
+}
+
+.nav-signin {
+    justify-self: start;
+}
+
+.nav-return {
+    justify-self: end;
+}
+
+.nav-cart {
+    grid-column: 1 / -1;
+    justify-content: center;
+}
+
+
+/* Panel */
+
+.panel {
+    min-height: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.panel-all {
+    width: 100%;
+    text-align: center;
+}
+
+.panel-ops {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.panel-deal {
+    display: none;
+}
+
+
+/* Hero */
+
+.hero-section {
+    height: 250px;
+    padding: 0 10px;
+}
+
+.hero-msg {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 0.75rem;
+    line-height: 18px;
+}
+
+
+/* Products */
+
+.shop-section {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.box {
+    min-height: auto;
+    padding: 15px 0;
+}
+
+.box-content h2 {
+    font-size: 1.3rem;
+}
+
+.box-img {
+    height: 300px;
+}
+
+
+/* Footer */
+
+.panel2 {
+    grid-template-columns: repeat(2, 1fr);
+    min-height: auto;
+    padding: 30px 20px;
+    gap: 30px 15px;
+}
+
+.foot-panel4 {
+    min-height: 100px;
+}
+
+.pages {
+    gap: 10px;
+    line-height: 20px;
+}
+```
+
+}
+
+/* =========================
+SMALL MOBILE
+480px AND BELOW
+========================= */
+
+@media (max-width: 480px) {
+
+```
+.navbar {
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav-logo,
+.logo {
+    width: 80px;
+}
+
+.nav-address {
+    font-size: 0.8rem;
+}
+
+.nav-second {
+    font-size: 0.75rem;
+}
+
+.nav-cart i {
+    font-size: 25px;
+}
+
+.hero-section {
+    height: 200px;
+}
+
+.hero-msg {
+    font-size: 0.7rem;
+    padding: 8px;
+}
+
+.box-img {
+    height: 250px;
+}
+
+.panel2 {
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 15px;
+}
+
+.panel2 ul p {
+    font-size: 0.85rem;
+}
+
+.panel2 ul a {
+    font-size: 0.75rem;
+}
+```
+
+}
